@@ -27,7 +27,6 @@ Install library/pustaka yg di butuhkan tertera pada file requirements.txt yolov9
 ```
 !pip install -r requirements.txt
 ```
-
 Download file pre train yolov9
 ```
 !wget https://github.com/WongKinYiu/yolov9/releases/download/v0.1/yolov9-t-converted.pt
@@ -41,7 +40,11 @@ Memulai pelatihan
 --cfg /content/drive/MyDrive/yolov9/models/detect/gelan-t.yaml \
 --hyp hyp.scratch-high.yaml --patience 10
 ```
-
+Convert file best.pt ke best.onnx
+```
+!python /content/drive/MyDrive/yolov9/export.py --weights /content/drive/MyDrive/yolov9/runs/train/exp4/weights/best.pt --img 640 --batch-size 1 --include onnx
+     
+```
 
 ## 2️⃣ Pelatihan Model OCR (CNN + LSTM + CTC)
 
