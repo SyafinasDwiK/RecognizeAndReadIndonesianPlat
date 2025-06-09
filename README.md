@@ -112,5 +112,5 @@ Jalankan skrip:
 
 ## 📌 Contoh Output
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](![Image](https://github.com/user-attachments/assets/cd270f32-081d-461b-8dbd-fd2b38211d36)
 
