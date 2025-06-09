@@ -40,7 +40,7 @@ ONNX Runtime
 
 ```
     
-## 🚀 Cara Menjalankan
+## 🚀 Cara Menjalankan Test
 Simpan gambar plat ke dalam folder (misalnya fotoplat/).
 
 Siapkan model:
@@ -51,7 +51,7 @@ OCR_CRNN.keras: model OCR CRNN.
 
 Jalankan skrip:
 ```bash
-  python Full.py
+  python test.py
 
 ```
 Output akan menampilkan:
