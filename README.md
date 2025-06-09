@@ -56,6 +56,7 @@ Aplikasi ini merupakan sistem Graphical User Interface (GUI) berbasis Tkinter + 
 ## Arsitektur
 
 🧩 Arsitektur
+
 YOLOv9 (ONNX): Deteksi lokasi plat nomor pada gambar.
 
 CNN: Ekstraksi fitur spasial dari citra plat.
