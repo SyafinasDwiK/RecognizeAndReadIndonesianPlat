@@ -18,7 +18,7 @@ dataset/
 ```
 ## 🔧 Langkah Pelatihan YOLOv9
 
-Clone repo yolov9 di drive
+Clone repository yolov9 di drive
 ```
 !git clone https://github.com/WongKinYiu/yolov9
 %cd yolov9
