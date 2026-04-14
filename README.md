@@ -1,54 +1,54 @@
 
-# 🚘 Automatic License Plate Recognition (ALPR) with YOLOv9 + CRNN + CTC
+#  Automatic License Plate Recognition (ALPR) with YOLOv9 + CRNN + CTC
 
 Sistem ini mendeteksi dan membaca teks plat nomor kendaraan secara otomatis dari gambar menggunakan kombinasi model YOLOv9 (untuk deteksi plat) dan CNN-LSTM-CTC (untuk OCR). Proyek ini cocok untuk aplikasi seperti smart parking, pelacakan kendaraan, dan sistem keamanan.
 
 
-## 📌 Fitur Aplikasi 
+##  Fitur Aplikasi 
 
 Aplikasi ini merupakan sistem Graphical User Interface (GUI) berbasis Tkinter + OpenCV yang mampu mendeteksi dan membaca teks plat nomor kendaraan dari gambar file maupun kamera secara real-time, menggunakan kombinasi model:
 
-🔍 Deteksi plat nomor menggunakan YOLOv9 ONNX.
+ Deteksi plat nomor menggunakan YOLOv9 ONNX.
 
-🧠 OCR berbasis CNN-LSTM-CTC (CRNN) untuk membaca teks tanpa anotasi karakter.
+ OCR berbasis CNN-LSTM-CTC (CRNN) untuk membaca teks tanpa anotasi karakter.
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
-### 🖼️ Input Gambar
-**📁 Opsi 1: Pilih File Gambar**
+###  Input Gambar
+** Opsi 1: Pilih File Gambar**
 - Mendukung berbagai format gambar: `.jpg`, `.png`, `.bmp`, `.tiff`, dll.
 - Gambar yang dipilih akan ditampilkan pada jendela **preview** sebelum diproses.
 
 
 
-### 📸 Kamera Langsung
-**📷 Opsi 2: Gunakan Kamera**
+###  Kamera Langsung
+** Opsi 2: Gunakan Kamera**
 - Aplikasi dapat membuka **webcam** langsung dari antarmuka GUI.
 - Tombol **"Capture & Proses"** memungkinkan pengambilan gambar real-time dari kamera untuk diproses oleh sistem OCR.
 
 
 
-### 🧠 Deteksi & OCR Otomatis
-- 🔎 **Deteksi otomatis** lokasi plat nomor kendaraan menggunakan model **YOLOv9 ONNX**.
-- 🧾 Pembacaan teks plat nomor dilakukan dengan **model OCR CRNN (CNN + LSTM + CTC)**.
-- ✨ Hasil teks dari plat langsung ditampilkan di GUI secara real-time.
+###  Deteksi & OCR Otomatis
+-  **Deteksi otomatis** lokasi plat nomor kendaraan menggunakan model **YOLOv9 ONNX**.
+-  Pembacaan teks plat nomor dilakukan dengan **model OCR CRNN (CNN + LSTM + CTC)**.
+-  Hasil teks dari plat langsung ditampilkan di GUI secara real-time.
 
 
 
-### 📊 Status & Preview
-- 🟦 Terdapat **progress bar animasi** selama proses berlangsung.
-- ✅ Area hasil menampilkan:
+###  Status & Preview
+-  Terdapat **progress bar animasi** selama proses berlangsung.
+-  Area hasil menampilkan:
   - **Teks plat nomor yang terdeteksi**
   - **Gambar plat hasil crop**
-- 📡 Indikator status:  
+-  Indikator status:  
   `"Sedang memproses..."`, `"Tidak terdeteksi"`, dan lain-lain.
 
 
-### 💾 Model Fleksibel
-- 📦 Mendukung pemuatan model secara dinamis:
+###  Model Fleksibel
+-  Mendukung pemuatan model secara dinamis:
   - `best.onnx` → model deteksi plat (YOLOv9)
   - `OCR_CRNN.keras` → model OCR teks plat (CRNN)
-- ✅ Model hanya dimuat saat dibutuhkan (**lazy-loading**) untuk menghemat memori.
+-  Model hanya dimuat saat dibutuhkan (**lazy-loading**) untuk menghemat memori.
 
 
 
